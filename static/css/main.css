@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #444;
+}
+
+.header {
+    background-color: #879edf;
+    height: 65px;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.movie_list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    align-items: center;
+    list-style: none;
+}
+
+.title_link {
+    max-width: 400px;
+}
+
+.titles {
+    padding: 5px;
+}
