@@ -47,10 +47,7 @@ get_movie_array = get_movie_array()
 def home():
     if request.form:
         print(request.form)
-    return render_template('home.html',
-                           get_popular_movies=get_popular_movies,
-                           get_movie_array=get_movie_array,
-                           )
+    return render_template('home.html', get_movie_array=get_movie_array)
 
 
 if __name__ == "__main__":

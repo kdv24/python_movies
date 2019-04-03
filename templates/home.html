@@ -6,12 +6,12 @@
         </form>
         <ul>
             {% for k, v in get_movie_array: %} {% if k == 'title': %}
-            <li>
-                {{ v }}
-            </li>
+            <a href="https://www.themoviedb.org/search/movie?query={{ v }}"
+                ><li>
+                    {{ v }}
+                </li>
+            </a>
             {% endif %} {% endfor %}
         </ul>
     </body>
 </html>
-
-<!-- TO DO: add link using <a href={{api_by_title}}>  -->
