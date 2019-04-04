@@ -12,17 +12,25 @@
                 <h1 class="header">Movie API with Flask</h1>
             </div>
         </header>
-
-        <ul class="movie_list">
-            {% for k, v in get_movie_array: %} {% if k == 'title': %}
-            <a
-                class="title_link"
-                href="https://www.themoviedb.org/search/movie?query={{ v }}"
-                ><li class="titles">
-                    {{ v }}
+        <div class="movie_list">
+            <ul class="movies">
+                {% for movie in movie_array: %}
+                <li class="titles">
+                    <a
+                        class="title_link"
+                        href="https://www.themoviedb.org/search/movie?query={{
+                            movie.title
+                        }}"
+                    >
+                        {{ movie.title }}
+                    </a>
+                    <div class="movie_details">
+                        <span> Release date: {{ movie.release_date }}</span
+                        ><span>Popularity: {{ movie.popularity }} </span>
+                    </div>
                 </li>
-            </a>
-            {% endif %} {% endfor %}
-        </ul>
+                {% endfor %}
+            </ul>
+        </div>
     </body>
 </html>

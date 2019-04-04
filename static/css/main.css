@@ -34,4 +34,12 @@ body {
 
 .titles {
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
